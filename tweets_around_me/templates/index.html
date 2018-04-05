@@ -10,7 +10,9 @@
             <input type="submit" value="Get tweets">
         </form>
 
-        {% if tweets|length == 0 %}
+        {% if not latitude and not longitude%}
+        	<h3></h3>
+        {% elif tweets|length == 0 %}
         	<h3>No geo tweets in this location :(</h3>
         {% else %}
         	<h3>Click on a marker to see the geo tweet!</h3>
