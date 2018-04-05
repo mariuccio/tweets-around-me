@@ -25,7 +25,7 @@ def _get_tweets(latitude, longitude):
                 "coordinates": t['coordinates']['coordinates'],
                 "url": "https://twitter.com/{0}/status/{1}".format(t['user']['screen_name'], t['id_str'])
             })
-    print(geo_tweets)
+
     return geo_tweets
 
 
