@@ -7,7 +7,7 @@
             <label for="coordinates">Insert coordinates: </label>
             <input id="latitude" type="number" step="0.000001" name="latitude" min="-85" max="85" placeholder="Latitude" value="{{latitude}}" required>
             <input id="longitude" type="number" step="0.000001" name="longitude" min="-180" max="180" placeholder="Longitude" value="{{longitude}}" required>
-            <input type="submit" value="Get tweets around me">
+            <input type="submit" value="Get tweets">
         </form>
 
         <h3>Tweets around me: {{ tweets|length }}</h3>
